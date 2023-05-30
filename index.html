@@ -32,19 +32,10 @@
       made by <a href="http://github.com/Efendo">Efendo</a>
     </h6>
     <h1 class="font-bold text-6xl text-center dark:text-white">HTMClicker</h1>
-    <py-script>
-     class Cbutton:
-      	def __init__(self):
-      		self.score = 0
-      
-      	def click(self):
-      		self.score += 1
-      		pyscript.write('ScoreDisp', self.score)
-      
-     C = Cbutton()
+    <py-script src="app.py">
     </py-script>
     <h1 id="ScoreDisp" class="text-center text-8xl m-9 dark:text-white">0</h1>
-    <div class="flex justify-center"> <button py-click="C.click()" class="flex justify-center bg-teal-500 text-4xl text-white px-4 py-2 rounded-full m-9 hover:bg-teal-600 dark:text-black border-8 border-black" type="button">Click</button></div>
+    <div class="flex justify-center"> <button py-click="C.click()" class="transition-all hover:text-5xl hover:transition-all bg-teal-500 text-4xl text-white px-4 py-2 rounded-full m-9 hover:bg-teal-600 dark:text-black border-8 border-black " type="button">Click</button></div>
    </div>
   </body>
 </html>
